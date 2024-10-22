@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #d3d3d3, #a9c1a9);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.letter-box {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.letter-box.correct {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.letter-box.present {
+    background-color: #FFA500;
+    color: white;
+}
+
+.letter-box.absent {
+    background-color: #ccc;
+    color: white;
+}
+
+.letter-box:hover {
+    transform: scale(1.1);
+}
+
+#keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+    background-color: #bbb;
+    transform: scale(1.1);
+}
+
+.key:active {
+    background-color: #aaa;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#play-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#play-again:hover {
+    background-color: #47864b;
+}
